@@ -1,0 +1,37 @@
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+}
+h2{
+    text-align: center;
+}
+.card{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.cal{
+    text-align: center;
+    font-size: larger;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px;
+    margin: 10px; */
+    gap: 15px;
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: cyan;
+    border: none;
+}
