@@ -1,0 +1,136 @@
+/* Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    height: 100%;
+    font-size: 16px; /* 1rem = 16px */
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  /* Canvas and Headings */
+  .canvas {
+    margin: 6.25rem auto; /* 100px to rem */
+    width: 80%;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* 40px to rem */
+    color: #000000;
+    margin-bottom: 1.875rem; /* 30px to rem */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* 24px to rem */
+    color: #000000;
+    margin-top: 1.25rem; /* 20px to rem */
+  }
+  
+  /* Color Buttons */
+  .color-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 1.25rem; /* 20px to rem */
+  }
+  
+  .button {
+    width: 7.5rem; /* 120px to rem */
+    height: 7.5rem; /* 120px to rem */
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.2); /* 8px 20px */
+  }
+  
+  /* Color Definitions */
+  #grey {
+    background-color: #7d7d7d;
+  }
+  
+  #white {
+    background-color: #ffffff;
+    border: 0.0625rem solid #ccc; /* 1px to rem */
+  }
+  
+  #blue {
+    background-color: #007bff;
+  }
+  
+  #yellow {
+    background-color: #ffeb3b;
+  }
+  
+  /* Smooth background color transition */
+  body {
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 48rem) { /* 768px breakpoint */
+    h1 {
+      font-size: 2rem; /* Adjust heading size */
+    }
+  
+    h2 {
+      font-size: 1.25rem; /* Adjust heading size */
+    }
+  
+    .color-buttons {
+      gap: 1rem; /* Reduce gap for smaller screens */
+    }
+  
+    .button {
+      width: 6rem; /* Reduce button size for smaller screens */
+      height: 6rem;
+    }
+  
+    nav a {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 30rem) { /* 480px breakpoint */
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2 {
+      font-size: 1.1rem;
+    }
+  
+    .color-buttons {
+      gap: 0.625rem; /* Further reduce gap for smaller screens */
+    }
+  
+    .button {
+      width: 5rem; /* Further reduce button size for small devices */
+      height: 5rem;
+    }
+  
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }
