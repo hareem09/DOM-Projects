@@ -1,0 +1,31 @@
+*{
+    width: 100%;
+    height: 100%; 
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.clock{
+    font-size: xx-large;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    flex: 1;
+    border: 2px solid black;
+    background-color: white;
+}
+span{
+    font-size: 220px;
+    background-image: url("https://media.istockphoto.com/id/1046046242/photo/binary-code-background.jpg?s=2048x2048&w=is&k=20&c=spaDO1A9fW2cPiDhzrn_KL9ILzouFeuqdvvlTZ2o0es=");
+    background-size: cover;
+    
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
