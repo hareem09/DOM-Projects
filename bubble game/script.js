@@ -22,8 +22,9 @@ function strttimer(){
         pmain.querySelector(".btn").addEventListener("click",()=>{
             timer=60;
             score=0;
-            document.querySelector("#scoreval").textContent=0;
+            document.querySelector("#scoreval").textContent=score;
             makeBubble();
+            getscore();
             getnewhit();
             strttimer();
             
